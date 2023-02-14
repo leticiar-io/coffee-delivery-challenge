@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
 `
 export const NavContainer = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 12px;
 
   a {
     display: flex;
@@ -24,6 +24,11 @@ export const ShoppingCartContainer = styled.a`
 
   padding: 10px;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    padding: 5px;
+    font-size: 10px;
+  }
 `
 
 export const LocationContainer = styled.div`
@@ -38,4 +43,9 @@ export const LocationContainer = styled.div`
 
   padding: 10px;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    padding: 5px;
+    font-size: 10px;
+  }
 `
