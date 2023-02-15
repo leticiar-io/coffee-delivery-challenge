@@ -19,4 +19,13 @@ export const ButtonContainer = styled.button`
   :hover {
     background: ${(props) => props.theme['gray-500']};
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  @media (max-width: 820px) {
+    margin-bottom: 10px;
+    min-width: 7rem;
+  }
 `

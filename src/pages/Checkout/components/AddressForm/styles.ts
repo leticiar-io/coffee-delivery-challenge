@@ -4,7 +4,6 @@ export const AddressFormContainer = styled.div`
   background: ${(props) => props.theme['gray-200']};
   border-radius: 6px;
   padding: 2.5rem;
-
   margin-bottom: 1rem;
 
   div {
@@ -13,6 +12,21 @@ export const AddressFormContainer = styled.div`
     Input {
       margin: 0.5rem;
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  @media (max-width: 820px) {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  @media (min-width: 1215px) {
+    width: 45rem;
+  }
+  @media (min-width: 1315px) {
+    width: 100rem;
   }
 `
 export const HeaderContainer = styled.header`

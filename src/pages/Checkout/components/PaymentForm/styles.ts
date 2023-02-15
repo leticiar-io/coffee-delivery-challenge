@@ -5,11 +5,22 @@ export const PaymentFormContainer = styled.div`
   background: ${(props) => props.theme['gray-200']};
   border-radius: 6px;
   padding: 2.5rem;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
+  @media (max-width: 820px) {
+    padding: 0.5rem;
+  }
 `
 
 export const PaymentContainerButtons = styled.div`
   display: flex;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 export const HeaderContainer = styled.header`
   display: flex;

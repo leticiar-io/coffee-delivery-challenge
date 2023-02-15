@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background: ${(props) => props.theme['gray-200']};
-  border-radius: 6px;
+  border-radius: 6px 36px 6px 36px;
   padding: 2.5rem;
 
   max-width: 28rem;

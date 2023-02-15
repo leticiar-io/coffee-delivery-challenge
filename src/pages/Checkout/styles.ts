@@ -2,11 +2,23 @@ import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
   gap: 1rem;
-
-  background-color: red;
-
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+  @media (max-width: 820px) {
+    display: block;
+  }
+  @media (min-width: 1215px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 1315px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `
 export const Container = styled.div`
   width: 100%;
