@@ -6,15 +6,12 @@ import { BrowserRouter } from 'react-router-dom'
 import { Router } from './Router'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
         <Router />
       </BrowserRouter>
       <GlobalStyle />
-      {/* the order is not important, but it must be placed inside the ThemeProvider */}
     </ThemeProvider>
   )
 }

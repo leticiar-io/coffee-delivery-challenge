@@ -14,7 +14,7 @@ import {
   ButtonAddCart,
 } from './styles'
 
-interface CardCoffeeProps {
+export interface CardCoffeeProps {
   id: string
   badge: string
   title: string[]
@@ -30,6 +30,17 @@ interface CoffeeCardProps {
 
 export function CardCoffee({ coffee }: CoffeeCardProps) {
   const [quantity, setQuantity] = useState(1)
+
+  // criando o incremento
+  function handleIncreaseCoffeesQuantity() {
+    setQuantity((e) => e + 1)
+  }
+
+  function handleDecreaseCoffeesQuantity() {
+    setQuantity((e) => e - 1)
+  }
+
+  console.log(quantity)
 
   return (
     <Container id={coffee.id}>
@@ -50,7 +61,14 @@ export function CardCoffee({ coffee }: CoffeeCardProps) {
           <Price>{coffee.price}</Price>
         </PriceFooter>
 
-        <QuantityInput type="number" placeholder="0" min={0} />
+        <QuantityInput
+          type="number"
+          placeholder="0"
+          min={0}
+          quantity={quantity}
+          onIncrease={handleIncreaseCoffeesQuantity}
+          onDecrease={handleDecreaseCoffeesQuantity}
+        />
 
         <ButtonAddCart>
           <ShoppingCart size={20} weight="duotone" />
