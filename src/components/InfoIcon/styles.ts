@@ -16,6 +16,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
+
+  div {
+    display: block;
+  }
 `
 
 export const IconCircle = styled.div<InfoIconStylesProps>`

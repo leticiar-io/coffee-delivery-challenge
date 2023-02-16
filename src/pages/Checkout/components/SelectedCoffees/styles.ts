@@ -6,15 +6,39 @@ export const Container = styled.div`
   padding: 2.5rem;
 
   max-width: 28rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    max-width: 100%;
+  }
+
+  @media (max-width: 820px) {
+    padding: 1rem;
+    max-width: 100%;
+  }
 `
+
+export const SelectedCoffeesContainer = styled.div``
+
 export const PriceContainer = styled.div`
   div {
     display: flex;
     justify-content: space-between;
+
+    font-size: 14px;
+    font-weight: 400;
   }
 `
-export const PriceTotal = styled.span`
-  width: 100%;
+export const PriceTotalContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 12px;
+  }
 `
 export const ConfirmOrderButton = styled.button`
   color: ${(props) => props.theme.white};
